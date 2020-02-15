@@ -16,6 +16,9 @@
     "@feathersjs/feathers": "^3.3.1",
     "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
+    "fs": "0.0.1-security",
+    "ganache": "^6.4.4",
+    "ganache-core": "^2.10.2",
     "nuxt": "^2.0.0",
     "web3": "^1.2.6"
   },

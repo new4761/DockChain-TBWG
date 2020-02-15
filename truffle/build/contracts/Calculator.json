@@ -115,15 +115,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"diplay\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[],\"name\":\"hello\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"text\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_b\",\"type\":\"uint256\"}],\"name\":\"myMinus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_b\",\"type\":\"uint256\"}],\"name\":\"myPlus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/demoThailand.sol\":\"Calculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/demoThailand.sol\":{\"keccak256\":\"0x67379c254fbdc0d07cb3dc1a9b0f3838e6dff8388007c4151f7defcda2344074\",\"urls\":[\"bzz-raw://c6ea62cdd9863e7a8ce4d5e10b57310869199e0a206f5ccc629c5d535dd2438e\",\"dweb:/ipfs/QmPNMymef6gYYGPXs6u5PvkLLUx1uf2MNYrvwhPJDo1Dsj\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610270806100606000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806319ff1d21146100515780637c7708cf146100d45780638da5cb5b14610120578063960a0a4d1461016a575b600080fd5b6100596101b6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61010a600480360360408110156100ea57600080fd5b8101908080359060200190929190803590602001909291905050506101f6565b6040518082815260200191505060405180910390f35b610128610206565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101a06004803603604081101561018057600080fd5b81019080803590602001909291908035906020019092919050505061022b565b6040518082815260200191505060405180910390f35b60606040518060400160405280600381526020017f574f570000000000000000000000000000000000000000000000000000000000815250905080905090565b6000818303905080905092915050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600081830190508090509291505056fea265627a7a723158202d2e0ab9d358d1e86668649241742b6f5f7ec2a72b494c091a2c88571dbfb0df64736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806319ff1d21146100515780637c7708cf146100d45780638da5cb5b14610120578063960a0a4d1461016a575b600080fd5b6100596101b6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61010a600480360360408110156100ea57600080fd5b8101908080359060200190929190803590602001909291905050506101f6565b6040518082815260200191505060405180910390f35b610128610206565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101a06004803603604081101561018057600080fd5b81019080803590602001909291908035906020019092919050505061022b565b6040518082815260200191505060405180910390f35b60606040518060400160405280600381526020017f574f570000000000000000000000000000000000000000000000000000000000815250905080905090565b6000818303905080905092915050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600081830190508090509291505056fea265627a7a723158202d2e0ab9d358d1e86668649241742b6f5f7ec2a72b494c091a2c88571dbfb0df64736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"diplay\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[],\"name\":\"hello\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"text\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_b\",\"type\":\"uint256\"}],\"name\":\"myMinus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_b\",\"type\":\"uint256\"}],\"name\":\"myPlus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/tbwg/truffle/contracts/demoThailand.sol\":\"Calculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/tbwg/truffle/contracts/demoThailand.sol\":{\"keccak256\":\"0x67379c254fbdc0d07cb3dc1a9b0f3838e6dff8388007c4151f7defcda2344074\",\"urls\":[\"bzz-raw://c6ea62cdd9863e7a8ce4d5e10b57310869199e0a206f5ccc629c5d535dd2438e\",\"dweb:/ipfs/QmPNMymef6gYYGPXs6u5PvkLLUx1uf2MNYrvwhPJDo1Dsj\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610270806100606000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806319ff1d21146100515780637c7708cf146100d45780638da5cb5b14610120578063960a0a4d1461016a575b600080fd5b6100596101b6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61010a600480360360408110156100ea57600080fd5b8101908080359060200190929190803590602001909291905050506101f6565b6040518082815260200191505060405180910390f35b610128610206565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101a06004803603604081101561018057600080fd5b81019080803590602001909291908035906020019092919050505061022b565b6040518082815260200191505060405180910390f35b60606040518060400160405280600381526020017f574f570000000000000000000000000000000000000000000000000000000000815250905080905090565b6000818303905080905092915050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600081830190508090509291505056fea265627a7a72315820823afe5abbbb23a5dea25e05e7bc5406868dcfb78440cfafd6c661681913dbea64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806319ff1d21146100515780637c7708cf146100d45780638da5cb5b14610120578063960a0a4d1461016a575b600080fd5b6100596101b6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61010a600480360360408110156100ea57600080fd5b8101908080359060200190929190803590602001909291905050506101f6565b6040518082815260200191505060405180910390f35b610128610206565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101a06004803603604081101561018057600080fd5b81019080803590602001909291908035906020019092919050505061022b565b6040518082815260200191505060405180910390f35b60606040518060400160405280600381526020017f574f570000000000000000000000000000000000000000000000000000000000815250905080905090565b6000818303905080905092915050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600081830190508090509291505056fea265627a7a72315820823afe5abbbb23a5dea25e05e7bc5406868dcfb78440cfafd6c661681913dbea64736f6c63430005100032",
   "sourceMap": "36:526:1:-;;;92:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:58:1;132:10;124:5;;:18;;;;;;;;;;;;;;;;;;36:526;;;;;;",
   "deployedSourceMap": "36:526:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:526:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;452:105;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;452:105:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;333:112;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;333:112:1;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;63:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;213:114;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;213:114:1;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;452:105;485:18;515:12;;;;;;;;;;;;;;;;;;;545:4;538:11;;452:105;:::o;333:112::-;383:8;414:2;409;:7;403:13;;434:3;427:10;;333:112;;;;:::o;63:20::-;;;;;;;;;;;;;:::o;213:114::-;262:8;296:2;291;:7;285:13;;316:3;309:10;;213:114;;;;:::o",
   "source": "pragma solidity >=0.4.22 <0.7.0;\r\n\r\ncontract Calculator {\r\n    address public owner;\r\n\r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    event diplay(address _from,uint res,uint _value);\r\n    function myPlus(uint _a,uint _b) public returns (uint res ) {\r\n         res = _a + _b;\r\n        return res;\r\n    }\r\n    function myMinus(uint _a,uint _b) public returns (uint res) {\r\n       res = _a - _b;\r\n        return res;\r\n    }\r\n     function hello() public returns (string memory text) {\r\n       text = \"WOW\";\r\n        return text;\r\n    }\r\n\r\n}\r\n",
-  "sourcePath": "D:\\SE\\TBWG\\hackDay\\wormupTBWG\\truffle\\contracts\\demoThailand.sol",
+  "sourcePath": "D:\\tbwg\\truffle\\contracts\\demoThailand.sol",
   "ast": {
-    "absolutePath": "/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/demoThailand.sol",
+    "absolutePath": "/D/tbwg/truffle/contracts/demoThailand.sol",
     "exportedSymbols": {
       "Calculator": [
         106
@@ -223,7 +223,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 225,
+                        "referencedDeclaration": 342,
                         "src": "132:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -936,7 +936,7 @@
     "src": "0:564:1"
   },
   "legacyAST": {
-    "absolutePath": "/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/demoThailand.sol",
+    "absolutePath": "/D/tbwg/truffle/contracts/demoThailand.sol",
     "exportedSymbols": {
       "Calculator": [
         106
@@ -1036,7 +1036,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 225,
+                        "referencedDeclaration": 342,
                         "src": "132:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1880,10 +1880,170 @@
       "links": {},
       "address": "0xfB6314eEfBe12324a7B16C41419c5adBbf7BCcfC",
       "transactionHash": "0x7239954d285d6cb86374fb96bf041eac530560768ba67cf1384855f821210360"
+    },
+    "1581768395473": {
+      "events": {
+        "0xdacda087ebf322018a8cec610e9217377482cce0955bbf359cb5cc9a4c73bccf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "res",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "diplay",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xf6da8c0b12347D1e6715bbf074e4b99b73b47C5F",
+      "transactionHash": "0x5a26c0cd61b11cfafa1a6ad9f395e40757e3da80661f0591d273b2e04a811f7e"
+    },
+    "1581769816630": {
+      "events": {
+        "0xdacda087ebf322018a8cec610e9217377482cce0955bbf359cb5cc9a4c73bccf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "res",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "diplay",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x571C8eeC1932D7176A3f3F420667389D389F52A5",
+      "transactionHash": "0xb8f8b1312bd694eadd9a266aefe709110f1dd5c0210a34f8b19370a9ef3c9bb1"
+    },
+    "1581776489299": {
+      "events": {
+        "0xdacda087ebf322018a8cec610e9217377482cce0955bbf359cb5cc9a4c73bccf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "res",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "diplay",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x8Bc2809C113E41DB7890C0b241BD6C7a4a1BC8B8",
+      "transactionHash": "0x5c24d29d449e93a66211d6c417e067bb9f4b0b7d8e4e0661beeecff9523bceea"
+    },
+    "1581778253075": {
+      "events": {
+        "0xdacda087ebf322018a8cec610e9217377482cce0955bbf359cb5cc9a4c73bccf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "res",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "diplay",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x4CfF2B5CcB26f45537941Ac9185a4fCbB00A7B6a",
+      "transactionHash": "0x6900f5f46705cdc535a5ef10402d92ea5ff9fc128032aa1d19640f696abd61ca"
+    },
+    "1581779980425": {
+      "events": {
+        "0xdacda087ebf322018a8cec610e9217377482cce0955bbf359cb5cc9a4c73bccf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "res",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "diplay",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x4Ffe5820471bAED08f4a28732432539220775b0c",
+      "transactionHash": "0xb38b6c57f311ba76bdcc623aa9820caabb40cd0a8956fa3dde1fbdaa785b4c3a"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-02-15T12:01:32.456Z",
+  "updatedAt": "2020-02-15T19:51:48.256Z",
   "devdoc": {
     "methods": {}
   },

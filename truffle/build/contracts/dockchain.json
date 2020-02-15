@@ -1,133 +1,93 @@
 {
-  "contractName": "dockchain",
+  "contractName": "Dockchain",
   "abi": [
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
-        {
-          "internalType": "string",
-          "name": "country",
-          "type": "string"
-        },
-        {
-          "internalType": "uint256",
-          "name": "consulId",
-          "type": "uint256"
-        }
-      ],
-      "name": "addConsul",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "consul_id",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "internalType": "string",
-          "name": "country",
-          "type": "string"
-        }
-      ],
-      "name": "getConsul",
-      "outputs": [
         {
           "internalType": "uint256",
           "name": "",
           "type": "uint256"
         }
       ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [],
-      "name": "getBuyer",
+      "name": "consul",
       "outputs": [
         {
-          "internalType": "address",
-          "name": "buy",
-          "type": "address"
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
         }
       ],
       "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [],
-      "name": "getSeller",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "sell",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
+      "stateMutability": "view",
       "type": "function"
     },
     {
       "constant": false,
       "inputs": [
         {
-          "internalType": "address",
-          "name": "buy",
-          "type": "address"
+          "internalType": "string",
+          "name": "_country",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_consulId",
+          "type": "uint256"
         }
       ],
-      "name": "setBuyer",
+      "name": "addConsul",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
     },
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
-          "internalType": "address",
-          "name": "sell",
-          "type": "address"
+          "internalType": "uint256",
+          "name": "_consulId",
+          "type": "uint256"
         }
       ],
-      "name": "setSeller",
-      "outputs": [],
+      "name": "getConsul",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
       "payable": false,
-      "stateMutability": "nonpayable",
+      "stateMutability": "view",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"country\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"consulId\",\"type\":\"uint256\"}],\"name\":\"addConsul\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"consul_id\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"getBuyer\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"buy\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"country\",\"type\":\"string\"}],\"name\":\"getConsul\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"getSeller\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"sell\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"buy\",\"type\":\"address\"}],\"name\":\"setBuyer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"sell\",\"type\":\"address\"}],\"name\":\"setSeller\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/dockchain.sol\":\"dockchain\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/dockchain.sol\":{\"keccak256\":\"0xbff96dcaae9f24ed65484b01585d25f1e567e7067b44dcea74d9c635c421f382\",\"urls\":[\"bzz-raw://77c44efd9b08a7a8e3d0d5bccdc5d29590c8cea60e774bda02d0b53f4ab5da30\",\"dweb:/ipfs/Qme1ygmiDF11u3LgdcNpdX1TvgZN8yMmSBhBoTPbkjkGxm\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610538806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c8063603daf9a1461006757806391161d6d146100b1578063a3f09ad614610180578063b0e2bdf0146101c4578063dbd0e1b61461029d578063e99d2866146102e7575b600080fd5b61006f61032b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61016a600480360360208110156100c757600080fd5b81019080803590602001906401000000008111156100e457600080fd5b8201836020820111156100f657600080fd5b8035906020019184600183028401116401000000008311171561011857600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610354565b6040518082815260200191505060405180910390f35b6101c26004803603602081101561019657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103d8565b005b610287600480360360408110156101da57600080fd5b81019080803590602001906401000000008111156101f757600080fd5b82018360208201111561020957600080fd5b8035906020019184600183028401116401000000008311171561022b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019092919050505061041b565b6040518082815260200191505060405180910390f35b6102a5610495565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610329600480360360208110156102fd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506104bf565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60006007826040518082805190602001908083835b6020831061038c5780518252602082019150602081019050602083039250610369565b6001836020036101000a03801982511681845116808217855250505050505090500191505090815260200160405180910390206000815480929190600101919050555060019050919050565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000816007846040518082805190602001908083835b602083106104545780518252602082019150602081019050602083039250610431565b6001836020036101000a0380198251168184511680821785525050505050509050019150509081526020016040518091039020819055506001905092915050565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea265627a7a72315820f55c2c279a6cdeb069c09469bf281ca22cceb9c5f30fdeab1f905e8b605157b064736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c8063603daf9a1461006757806391161d6d146100b1578063a3f09ad614610180578063b0e2bdf0146101c4578063dbd0e1b61461029d578063e99d2866146102e7575b600080fd5b61006f61032b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61016a600480360360208110156100c757600080fd5b81019080803590602001906401000000008111156100e457600080fd5b8201836020820111156100f657600080fd5b8035906020019184600183028401116401000000008311171561011857600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610354565b6040518082815260200191505060405180910390f35b6101c26004803603602081101561019657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103d8565b005b610287600480360360408110156101da57600080fd5b81019080803590602001906401000000008111156101f757600080fd5b82018360208201111561020957600080fd5b8035906020019184600183028401116401000000008311171561022b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019092919050505061041b565b6040518082815260200191505060405180910390f35b6102a5610495565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610329600480360360208110156102fd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506104bf565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60006007826040518082805190602001908083835b6020831061038c5780518252602082019150602081019050602083039250610369565b6001836020036101000a03801982511681845116808217855250505050505090500191505090815260200160405180910390206000815480929190600101919050555060019050919050565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000816007846040518082805190602001908083835b602083106104545780518252602082019150602081019050602083039250610431565b6001836020036101000a0380198251168184511680821785525050505050509050019150509081526020016040518091039020819055506001905092915050565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea265627a7a72315820f55c2c279a6cdeb069c09469bf281ca22cceb9c5f30fdeab1f905e8b605157b064736f6c63430005100032",
-  "sourceMap": "36:1757:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:1757:2;;;;;;;",
-  "deployedSourceMap": "36:1757:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:1757:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;968:78;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;722:119;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;722:119:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;722:119:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;722:119:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;722:119:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;722:119:2;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1141:66;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1141:66:2;;;;;;;;;;;;;;;;;;;:::i;:::-;;563:151;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;563:151:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;563:151:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;563:151:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;563:151:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;563:151:2;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1052:81;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1213:70;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1213:70:2;;;;;;;;;;;;;;;;;;;:::i;:::-;;968:78;1003:11;1033:5;;;;;;;;;;;1026:12;;968:78;:::o;722:119::-;780:4;797:6;804:7;797:15;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;797:15:2;;;;;;;;;;;;;;;;;;;;;;:17;;;;;;;;;;;;;832:1;825:8;;722:119;;;:::o;1141:66::-;1196:3;1188:5;;:11;;;;;;;;;;;;;;;;;;1141:66;:::o;563:151::-;635:14;679:8;661:6;668:7;661:15;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;661:15:2;;;;;;;;;;;;;;;;;;;;;:26;;;;705:1;698:8;;563:151;;;;:::o;1052:81::-;1088:12;1119:6;;;;;;;;;;;1112:13;;1052:81;:::o;1213:70::-;1271:4;1262:6;;:13;;;;;;;;;;;;;;;;;;1213:70;:::o",
-  "source": "pragma solidity >=0.4.22 <0.7.0;\r\n\r\ncontract dockchain {\r\n    address private buyer;\r\n    address private seller;\r\n    address nowProvider;\r\n    uint private harmonize;\r\n    address shipId;\r\n    address consul_in;\r\n    address consul_des;\r\n\r\n    // constructor(address buyers,address provider) public {\r\n    //     buyer = buyers;\r\n    //     seller = msg.sender;\r\n    //     nowProvider = provider;\r\n    //     //consul_in = 1;\r\n    //     //consul_des = 9;\r\n    // }\r\n    mapping(string=>uint) consul;\r\n    //consul[\"Thai\"]=9;\r\n\r\n    //consul[] consuls;\r\n\r\n    function addConsul(string memory country,uint consulId) public returns (uint consul_id){\r\n        consul[country] = consulId;\r\n        return 1;\r\n    }\r\n\r\n    function getConsul(string memory country) public returns (uint) {\r\n        consul[country]++;\r\n        return 1;\r\n    }\r\n\r\n    // struct provider {\r\n\r\n    // }\r\n\r\n    //mapping(address=>provider) Provider;\r\n    //Provider.push(adddress)\r\n\r\n\r\n    function getBuyer()public returns (address buy) {\r\n       return buyer;\r\n    }\r\n    function getSeller()public returns (address sell) {\r\n       return seller;\r\n    }\r\n\r\n    function setBuyer(address buy)public {\r\n       buyer = buy;\r\n    }\r\n    function setSeller(address sell)public {\r\n       seller = sell;\r\n    }\r\n\r\n    // function ship(address cargo, address nowProvider, address nextProvider) public {\r\n\r\n    // }\r\n\r\n    //กงศุล\r\n    // function approve(address memory seller,address memory provider)  {\r\n    //     require(mes.sender == 1);\r\n    //     require(seller==provider);\r\n    //     return true;\r\n    // }\r\n\r\n    // //provider\r\n    // function updateShip(address ship) {\r\n    //     require(msg.sender==this.nowProvider);\r\n    //     this.shipId=ship;\r\n    // }\r\n\r\n    // //function updateStat()\r\n\r\n}",
-  "sourcePath": "D:\\SE\\TBWG\\hackDay\\wormupTBWG\\truffle\\contracts\\dockchain.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_country\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_consulId\",\"type\":\"uint256\"}],\"name\":\"addConsul\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"consul\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_consulId\",\"type\":\"uint256\"}],\"name\":\"getConsul\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/tbwg/truffle/contracts/dockchain.sol\":\"Dockchain\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/tbwg/truffle/contracts/dockchain.sol\":{\"keccak256\":\"0x6cef9cb38b1ef970eb83dff3a517992c52465277afec86ec4d49816362cb5442\",\"urls\":[\"bzz-raw://04ed74f2b17cdf826905880ac830183ea94be8641b7a048d3f156a3bb12e795e\",\"dweb:/ipfs/QmX9thqFrqgU2KrGU4ejKqJQMwZNHkhtCuGagGfwDiobAN\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610526806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063b0e2bdf014610046578063c67a58e61461010b578063d5cf4c08146101b2575b600080fd5b6101096004803603604081101561005c57600080fd5b810190808035906020019064010000000081111561007957600080fd5b82018360208201111561008b57600080fd5b803590602001918460018302840111640100000000831117156100ad57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929080359060200190929190505050610260565b005b6101376004803603602081101561012157600080fd5b81019080803590602001909291905050506102d0565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561017757808201518184015260208101905061015c565b50505050905090810190601f1680156101a45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6101de600480360360208110156101c857600080fd5b8101908080359060200190929190505050610390565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b83811015610224578082015181840152602081019050610209565b50505050905090810190601f1680156102515780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b60086040518060400160405280848152602001838152509080600181540180825580915050906001820390600052602060002090600202016000909192909190915060008201518160000190805190602001906102be92919061044c565b50602082015181600101555050505050565b6060600882815481106102df57fe5b90600052602060002090600202016000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103845780601f1061035957610100808354040283529160200191610384565b820191906000526020600020905b81548152906001019060200180831161036757829003601f168201915b50505050509050919050565b6007602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561043c5780601f106104115761010080835404028352916020019161043c565b820191906000526020600020905b81548152906001019060200180831161041f57829003601f168201915b5050505050908060010154905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061048d57805160ff19168380011785556104bb565b828001600101855582156104bb579182015b828111156104ba57825182559160200191906001019061049f565b5b5090506104c891906104cc565b5090565b6104ee91905b808211156104ea5760008160009055506001016104d2565b5090565b9056fea265627a7a723158208759fc22a70e4030e705cbddad97ef45ebb2933413807d4cdac425b833a9fc9764736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063b0e2bdf014610046578063c67a58e61461010b578063d5cf4c08146101b2575b600080fd5b6101096004803603604081101561005c57600080fd5b810190808035906020019064010000000081111561007957600080fd5b82018360208201111561008b57600080fd5b803590602001918460018302840111640100000000831117156100ad57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929080359060200190929190505050610260565b005b6101376004803603602081101561012157600080fd5b81019080803590602001909291905050506102d0565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561017757808201518184015260208101905061015c565b50505050905090810190601f1680156101a45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6101de600480360360208110156101c857600080fd5b8101908080359060200190929190505050610390565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b83811015610224578082015181840152602081019050610209565b50505050905090810190601f1680156102515780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b60086040518060400160405280848152602001838152509080600181540180825580915050906001820390600052602060002090600202016000909192909190915060008201518160000190805190602001906102be92919061044c565b50602082015181600101555050505050565b6060600882815481106102df57fe5b90600052602060002090600202016000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103845780601f1061035957610100808354040283529160200191610384565b820191906000526020600020905b81548152906001019060200180831161036757829003601f168201915b50505050509050919050565b6007602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561043c5780601f106104115761010080835404028352916020019161043c565b820191906000526020600020905b81548152906001019060200180831161041f57829003601f168201915b5050505050908060010154905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061048d57805160ff19168380011785556104bb565b828001600101855582156104bb579182015b828111156104ba57825182559160200191906001019061049f565b5b5090506104c891906104cc565b5090565b6104ee91905b808211156104ea5760008160009055506001016104d2565b5090565b9056fea265627a7a723158208759fc22a70e4030e705cbddad97ef45ebb2933413807d4cdac425b833a9fc9764736f6c63430005100032",
+  "sourceMap": "34:860:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:860:1;;;;;;;",
+  "deployedSourceMap": "34:860:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:860:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;643:127;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;643:127:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;643:127:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;643:127:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;643:127:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;643:127:1;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;776:115;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;776:115:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;776:115:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;459:40;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;459:40:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;459:40:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;643:127;721:7;734:27;;;;;;;;741:8;734:27;;;;751:9;734:27;;;721:41;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;721:41:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;643:127;;:::o;776:115::-;835:13;861:7;869:9;861:18;;;;;;;;;;;;;;;;;;:23;;854:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;776:115;;;:::o;459:40::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;34:860::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.7.0;\n\ncontract Dockchain {\n    address private buyer;\n    address private seller;\n    address nowProvider;\n    uint256 private harmonize;\n    address shipId;\n    address consul_in;\n    address consul_des;\n\n    // constructor(address buyers,address provider) public {\n    //     buyer = buyers;\n    //     seller = msg.sender;\n    //     nowProvider = provider;\n    //     //consul_in = 1;\n    //     //consul_des = 9;\n    // }\n    mapping(uint256 => Consul) public consul;\n    //consul[\"Thai\"]=9;\n\n    //consul[] consuls;\n    struct Consul {\n        string name;\n        uint256 id;\n    }\n    Consul[] consuls;\n    function addConsul(string memory _country, uint256 _consulId) public {\n       consuls.push(Consul(_country, _consulId));\n\n    }\n\n    function getConsul(uint256 _consulId) public view returns (string memory) {\n  return consuls[_consulId].name;\n    }\n\n}\n",
+  "sourcePath": "D:\\tbwg\\truffle\\contracts\\dockchain.sol",
   "ast": {
-    "absolutePath": "/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/dockchain.sol",
+    "absolutePath": "/D/tbwg/truffle/contracts/dockchain.sol",
     "exportedSymbols": {
-      "dockchain": [
-        196
+      "Dockchain": [
+        95
       ]
     },
-    "id": 197,
+    "id": 96,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 108,
+        "id": 38,
         "literals": [
           "solidity",
           ">=",
@@ -138,7 +98,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:2"
+        "src": "0:32:1"
       },
       {
         "baseContracts": [],
@@ -146,20 +106,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 196,
+        "id": 95,
         "linearizedBaseContracts": [
-          196
+          95
         ],
-        "name": "dockchain",
+        "name": "Dockchain",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 110,
+            "id": 40,
             "name": "buyer",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "62:21:2",
+            "scope": 95,
+            "src": "59:21:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -167,10 +127,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 109,
+              "id": 39,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "62:7:2",
+              "src": "59:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -182,11 +142,11 @@
           },
           {
             "constant": false,
-            "id": 112,
+            "id": 42,
             "name": "seller",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "90:22:2",
+            "scope": 95,
+            "src": "86:22:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -194,10 +154,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 111,
+              "id": 41,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "90:7:2",
+              "src": "86:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -209,11 +169,11 @@
           },
           {
             "constant": false,
-            "id": 114,
+            "id": 44,
             "name": "nowProvider",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "119:19:2",
+            "scope": 95,
+            "src": "114:19:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -221,10 +181,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 113,
+              "id": 43,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "119:7:2",
+              "src": "114:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -236,11 +196,11 @@
           },
           {
             "constant": false,
-            "id": 116,
+            "id": 46,
             "name": "harmonize",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "145:22:2",
+            "scope": 95,
+            "src": "139:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -248,10 +208,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 115,
-              "name": "uint",
+              "id": 45,
+              "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "145:4:2",
+              "src": "139:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -262,11 +222,11 @@
           },
           {
             "constant": false,
-            "id": 118,
+            "id": 48,
             "name": "shipId",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "174:14:2",
+            "scope": 95,
+            "src": "170:14:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -274,10 +234,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 117,
+              "id": 47,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "174:7:2",
+              "src": "170:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -289,11 +249,11 @@
           },
           {
             "constant": false,
-            "id": 120,
+            "id": 50,
             "name": "consul_in",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "195:17:2",
+            "scope": 95,
+            "src": "190:17:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -301,10 +261,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 119,
+              "id": 49,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "195:7:2",
+              "src": "190:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -316,11 +276,11 @@
           },
           {
             "constant": false,
-            "id": 122,
+            "id": 52,
             "name": "consul_des",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "219:18:2",
+            "scope": 95,
+            "src": "213:18:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -328,10 +288,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 121,
+              "id": 51,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "219:7:2",
+              "src": "213:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -343,44 +303,147 @@
           },
           {
             "constant": false,
-            "id": 126,
+            "id": 56,
             "name": "consul",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "474:28:2",
+            "scope": 95,
+            "src": "459:40:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
-              "typeString": "mapping(string => uint256)"
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Consul_$61_storage_$",
+              "typeString": "mapping(uint256 => struct Dockchain.Consul)"
             },
             "typeName": {
-              "id": 125,
+              "id": 55,
               "keyType": {
-                "id": 123,
-                "name": "string",
+                "id": 53,
+                "name": "uint256",
                 "nodeType": "ElementaryTypeName",
-                "src": "482:6:2",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_string_storage_ptr",
-                  "typeString": "string"
-                }
-              },
-              "nodeType": "Mapping",
-              "src": "474:21:2",
-              "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
-                "typeString": "mapping(string => uint256)"
-              },
-              "valueType": {
-                "id": 124,
-                "name": "uint",
-                "nodeType": "ElementaryTypeName",
-                "src": "490:4:2",
+                "src": "467:7:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
+              },
+              "nodeType": "Mapping",
+              "src": "459:26:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Consul_$61_storage_$",
+                "typeString": "mapping(uint256 => struct Dockchain.Consul)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 54,
+                "name": "Consul",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 61,
+                "src": "478:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Consul_$61_storage_ptr",
+                  "typeString": "struct Dockchain.Consul"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Dockchain.Consul",
+            "id": 61,
+            "members": [
+              {
+                "constant": false,
+                "id": 58,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 61,
+                "src": "578:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 57,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "578:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 60,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 61,
+                "src": "599:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 59,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "599:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Consul",
+            "nodeType": "StructDefinition",
+            "scope": 95,
+            "src": "554:62:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 64,
+            "name": "consuls",
+            "nodeType": "VariableDeclaration",
+            "scope": 95,
+            "src": "621:16:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Consul_$61_storage_$dyn_storage",
+              "typeString": "struct Dockchain.Consul[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 62,
+                "name": "Consul",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 61,
+                "src": "621:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Consul_$61_storage_ptr",
+                  "typeString": "struct Dockchain.Consul"
+                }
+              },
+              "id": 63,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "621:8:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Consul_$61_storage_$dyn_storage_ptr",
+                "typeString": "struct Dockchain.Consul[]"
               }
             },
             "value": null,
@@ -388,127 +451,153 @@
           },
           {
             "body": {
-              "id": 143,
+              "id": 80,
               "nodeType": "Block",
-              "src": "650:64:2",
+              "src": "712:58:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 139,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 75,
+                            "name": "_country",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 66,
+                            "src": "741:8:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 76,
+                            "name": "_consulId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 68,
+                            "src": "751:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "id": 74,
+                          "name": "Consul",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 61,
+                          "src": "734:6:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_Consul_$61_storage_ptr_$",
+                            "typeString": "type(struct Dockchain.Consul storage pointer)"
+                          }
+                        },
+                        "id": 77,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "734:27:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Consul_$61_memory",
+                          "typeString": "struct Dockchain.Consul memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Consul_$61_memory",
+                          "typeString": "struct Dockchain.Consul memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 71,
+                        "name": "consuls",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64,
+                        "src": "721:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Consul_$61_storage_$dyn_storage",
+                          "typeString": "struct Dockchain.Consul storage ref[] storage ref"
+                        }
+                      },
+                      "id": 73,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "721:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Consul_$61_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct Dockchain.Consul storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 78,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
+                    "kind": "functionCall",
                     "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "baseExpression": {
-                        "argumentTypes": null,
-                        "id": 135,
-                        "name": "consul",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 126,
-                        "src": "661:6:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
-                          "typeString": "mapping(string memory => uint256)"
-                        }
-                      },
-                      "id": 137,
-                      "indexExpression": {
-                        "argumentTypes": null,
-                        "id": 136,
-                        "name": "country",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 128,
-                        "src": "668:7:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      },
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
-                      "nodeType": "IndexAccess",
-                      "src": "661:15:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 138,
-                      "name": "consulId",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 130,
-                      "src": "679:8:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "661:26:2",
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "721:41:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 140,
+                  "id": 79,
                   "nodeType": "ExpressionStatement",
-                  "src": "661:26:2"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "hexValue": "31",
-                    "id": 141,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": true,
-                    "kind": "number",
-                    "lValueRequested": false,
-                    "nodeType": "Literal",
-                    "src": "705:1:2",
-                    "subdenomination": null,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_rational_1_by_1",
-                      "typeString": "int_const 1"
-                    },
-                    "value": "1"
-                  },
-                  "functionReturnParameters": 134,
-                  "id": 142,
-                  "nodeType": "Return",
-                  "src": "698:8:2"
+                  "src": "721:41:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 144,
+            "id": 81,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "addConsul",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 131,
+              "id": 69,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 128,
-                  "name": "country",
+                  "id": 66,
+                  "name": "_country",
                   "nodeType": "VariableDeclaration",
-                  "scope": 144,
-                  "src": "582:21:2",
+                  "scope": 81,
+                  "src": "662:22:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -516,10 +605,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 127,
+                    "id": 65,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "582:6:2",
+                    "src": "662:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -530,11 +619,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 130,
-                  "name": "consulId",
+                  "id": 68,
+                  "name": "_consulId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 144,
-                  "src": "604:13:2",
+                  "scope": 81,
+                  "src": "686:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -542,10 +631,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 129,
-                    "name": "uint",
+                    "id": 67,
+                    "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "604:4:2",
+                    "src": "686:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -555,191 +644,108 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "581:37:2"
+              "src": "661:43:1"
             },
             "returnParameters": {
-              "id": 134,
+              "id": 70,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 133,
-                  "name": "consul_id",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 144,
-                  "src": "635:14:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 132,
-                    "name": "uint",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "635:4:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "634:16:2"
+              "parameters": [],
+              "src": "712:0:1"
             },
-            "scope": 196,
-            "src": "563:151:2",
+            "scope": 95,
+            "src": "643:127:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 158,
+              "id": 93,
               "nodeType": "Block",
-              "src": "786:55:2",
+              "src": "850:41:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 154,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "nodeType": "UnaryOperation",
-                    "operator": "++",
-                    "prefix": false,
-                    "src": "797:17:2",
-                    "subExpression": {
+                    "expression": {
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 151,
-                        "name": "consul",
+                        "id": 88,
+                        "name": "consuls",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 126,
-                        "src": "797:6:2",
+                        "referencedDeclaration": 64,
+                        "src": "861:7:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
-                          "typeString": "mapping(string memory => uint256)"
+                          "typeIdentifier": "t_array$_t_struct$_Consul_$61_storage_$dyn_storage",
+                          "typeString": "struct Dockchain.Consul storage ref[] storage ref"
                         }
                       },
-                      "id": 153,
+                      "id": 90,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 152,
-                        "name": "country",
+                        "id": 89,
+                        "name": "_consulId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 146,
-                        "src": "804:7:2",
+                        "referencedDeclaration": 83,
+                        "src": "869:9:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
                         }
                       },
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
-                      "lValueRequested": true,
+                      "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "797:15:2",
+                      "src": "861:18:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
+                        "typeIdentifier": "t_struct$_Consul_$61_storage",
+                        "typeString": "struct Dockchain.Consul storage ref"
                       }
                     },
+                    "id": 91,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "name",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 58,
+                    "src": "861:23:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
                     }
                   },
-                  "id": 155,
-                  "nodeType": "ExpressionStatement",
-                  "src": "797:17:2"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "hexValue": "31",
-                    "id": 156,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": true,
-                    "kind": "number",
-                    "lValueRequested": false,
-                    "nodeType": "Literal",
-                    "src": "832:1:2",
-                    "subdenomination": null,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_rational_1_by_1",
-                      "typeString": "int_const 1"
-                    },
-                    "value": "1"
-                  },
-                  "functionReturnParameters": 150,
-                  "id": 157,
+                  "functionReturnParameters": 87,
+                  "id": 92,
                   "nodeType": "Return",
-                  "src": "825:8:2"
+                  "src": "854:30:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 159,
+            "id": 94,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getConsul",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 147,
+              "id": 84,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 146,
-                  "name": "country",
+                  "id": 83,
+                  "name": "_consulId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 159,
-                  "src": "741:21:2",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 145,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "741:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "740:23:2"
-            },
-            "returnParameters": {
-              "id": 150,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 149,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 159,
-                  "src": "780:4:2",
+                  "scope": 94,
+                  "src": "795:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -747,10 +753,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 148,
-                    "name": "uint",
+                    "id": 82,
+                    "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "780:4:2",
+                    "src": "795:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -760,407 +766,66 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "779:6:2"
-            },
-            "scope": 196,
-            "src": "722:119:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 166,
-              "nodeType": "Block",
-              "src": "1016:30:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 164,
-                    "name": "buyer",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 110,
-                    "src": "1033:5:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "functionReturnParameters": 163,
-                  "id": 165,
-                  "nodeType": "Return",
-                  "src": "1026:12:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 167,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getBuyer",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 160,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "985:2:2"
+              "src": "794:19:1"
             },
             "returnParameters": {
-              "id": 163,
+              "id": 87,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 162,
-                  "name": "buy",
+                  "id": 86,
+                  "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 167,
-                  "src": "1003:11:2",
+                  "scope": 94,
+                  "src": "835:13:1",
                   "stateVariable": false,
-                  "storageLocation": "default",
+                  "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
                   },
                   "typeName": {
-                    "id": 161,
-                    "name": "address",
+                    "id": 85,
+                    "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1003:7:2",
-                    "stateMutability": "nonpayable",
+                    "src": "835:6:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "1002:13:2"
+              "src": "834:15:1"
             },
-            "scope": 196,
-            "src": "968:78:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 174,
-              "nodeType": "Block",
-              "src": "1102:31:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 172,
-                    "name": "seller",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 112,
-                    "src": "1119:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "functionReturnParameters": 171,
-                  "id": 173,
-                  "nodeType": "Return",
-                  "src": "1112:13:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 175,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getSeller",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 168,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1070:2:2"
-            },
-            "returnParameters": {
-              "id": 171,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 170,
-                  "name": "sell",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 175,
-                  "src": "1088:12:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 169,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1088:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1087:14:2"
-            },
-            "scope": 196,
-            "src": "1052:81:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 184,
-              "nodeType": "Block",
-              "src": "1178:29:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 182,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 180,
-                      "name": "buyer",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 110,
-                      "src": "1188:5:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 181,
-                      "name": "buy",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 177,
-                      "src": "1196:3:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "1188:11:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "id": 183,
-                  "nodeType": "ExpressionStatement",
-                  "src": "1188:11:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 185,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setBuyer",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 178,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 177,
-                  "name": "buy",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 185,
-                  "src": "1159:11:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 176,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1159:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1158:13:2"
-            },
-            "returnParameters": {
-              "id": 179,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1178:0:2"
-            },
-            "scope": 196,
-            "src": "1141:66:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 194,
-              "nodeType": "Block",
-              "src": "1252:31:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 192,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 190,
-                      "name": "seller",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 112,
-                      "src": "1262:6:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 191,
-                      "name": "sell",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 187,
-                      "src": "1271:4:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "1262:13:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "id": 193,
-                  "nodeType": "ExpressionStatement",
-                  "src": "1262:13:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 195,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setSeller",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 188,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 187,
-                  "name": "sell",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 195,
-                  "src": "1232:12:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 186,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1232:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1231:14:2"
-            },
-            "returnParameters": {
-              "id": 189,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1252:0:2"
-            },
-            "scope": 196,
-            "src": "1213:70:2",
-            "stateMutability": "nonpayable",
+            "scope": 95,
+            "src": "776:115:1",
+            "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 197,
-        "src": "36:1757:2"
+        "scope": 96,
+        "src": "34:860:1"
       }
     ],
-    "src": "0:1793:2"
+    "src": "0:895:1"
   },
   "legacyAST": {
-    "absolutePath": "/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/dockchain.sol",
+    "absolutePath": "/D/tbwg/truffle/contracts/dockchain.sol",
     "exportedSymbols": {
-      "dockchain": [
-        196
+      "Dockchain": [
+        95
       ]
     },
-    "id": 197,
+    "id": 96,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 108,
+        "id": 38,
         "literals": [
           "solidity",
           ">=",
@@ -1171,7 +836,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:2"
+        "src": "0:32:1"
       },
       {
         "baseContracts": [],
@@ -1179,20 +844,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 196,
+        "id": 95,
         "linearizedBaseContracts": [
-          196
+          95
         ],
-        "name": "dockchain",
+        "name": "Dockchain",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 110,
+            "id": 40,
             "name": "buyer",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "62:21:2",
+            "scope": 95,
+            "src": "59:21:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1200,10 +865,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 109,
+              "id": 39,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "62:7:2",
+              "src": "59:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -1215,11 +880,11 @@
           },
           {
             "constant": false,
-            "id": 112,
+            "id": 42,
             "name": "seller",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "90:22:2",
+            "scope": 95,
+            "src": "86:22:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1227,10 +892,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 111,
+              "id": 41,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "90:7:2",
+              "src": "86:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -1242,11 +907,11 @@
           },
           {
             "constant": false,
-            "id": 114,
+            "id": 44,
             "name": "nowProvider",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "119:19:2",
+            "scope": 95,
+            "src": "114:19:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1254,10 +919,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 113,
+              "id": 43,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "119:7:2",
+              "src": "114:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -1269,11 +934,11 @@
           },
           {
             "constant": false,
-            "id": 116,
+            "id": 46,
             "name": "harmonize",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "145:22:2",
+            "scope": 95,
+            "src": "139:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1281,10 +946,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 115,
-              "name": "uint",
+              "id": 45,
+              "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "145:4:2",
+              "src": "139:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1295,11 +960,11 @@
           },
           {
             "constant": false,
-            "id": 118,
+            "id": 48,
             "name": "shipId",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "174:14:2",
+            "scope": 95,
+            "src": "170:14:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1307,10 +972,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 117,
+              "id": 47,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "174:7:2",
+              "src": "170:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -1322,11 +987,11 @@
           },
           {
             "constant": false,
-            "id": 120,
+            "id": 50,
             "name": "consul_in",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "195:17:2",
+            "scope": 95,
+            "src": "190:17:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1334,10 +999,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 119,
+              "id": 49,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "195:7:2",
+              "src": "190:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -1349,11 +1014,11 @@
           },
           {
             "constant": false,
-            "id": 122,
+            "id": 52,
             "name": "consul_des",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "219:18:2",
+            "scope": 95,
+            "src": "213:18:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1361,10 +1026,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 121,
+              "id": 51,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "219:7:2",
+              "src": "213:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -1376,44 +1041,147 @@
           },
           {
             "constant": false,
-            "id": 126,
+            "id": 56,
             "name": "consul",
             "nodeType": "VariableDeclaration",
-            "scope": 196,
-            "src": "474:28:2",
+            "scope": 95,
+            "src": "459:40:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
-              "typeString": "mapping(string => uint256)"
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Consul_$61_storage_$",
+              "typeString": "mapping(uint256 => struct Dockchain.Consul)"
             },
             "typeName": {
-              "id": 125,
+              "id": 55,
               "keyType": {
-                "id": 123,
-                "name": "string",
+                "id": 53,
+                "name": "uint256",
                 "nodeType": "ElementaryTypeName",
-                "src": "482:6:2",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_string_storage_ptr",
-                  "typeString": "string"
-                }
-              },
-              "nodeType": "Mapping",
-              "src": "474:21:2",
-              "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
-                "typeString": "mapping(string => uint256)"
-              },
-              "valueType": {
-                "id": 124,
-                "name": "uint",
-                "nodeType": "ElementaryTypeName",
-                "src": "490:4:2",
+                "src": "467:7:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
+              },
+              "nodeType": "Mapping",
+              "src": "459:26:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Consul_$61_storage_$",
+                "typeString": "mapping(uint256 => struct Dockchain.Consul)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 54,
+                "name": "Consul",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 61,
+                "src": "478:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Consul_$61_storage_ptr",
+                  "typeString": "struct Dockchain.Consul"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Dockchain.Consul",
+            "id": 61,
+            "members": [
+              {
+                "constant": false,
+                "id": 58,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 61,
+                "src": "578:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 57,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "578:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 60,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 61,
+                "src": "599:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 59,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "599:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Consul",
+            "nodeType": "StructDefinition",
+            "scope": 95,
+            "src": "554:62:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 64,
+            "name": "consuls",
+            "nodeType": "VariableDeclaration",
+            "scope": 95,
+            "src": "621:16:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Consul_$61_storage_$dyn_storage",
+              "typeString": "struct Dockchain.Consul[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 62,
+                "name": "Consul",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 61,
+                "src": "621:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Consul_$61_storage_ptr",
+                  "typeString": "struct Dockchain.Consul"
+                }
+              },
+              "id": 63,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "621:8:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Consul_$61_storage_$dyn_storage_ptr",
+                "typeString": "struct Dockchain.Consul[]"
               }
             },
             "value": null,
@@ -1421,127 +1189,153 @@
           },
           {
             "body": {
-              "id": 143,
+              "id": 80,
               "nodeType": "Block",
-              "src": "650:64:2",
+              "src": "712:58:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 139,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 75,
+                            "name": "_country",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 66,
+                            "src": "741:8:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 76,
+                            "name": "_consulId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 68,
+                            "src": "751:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "id": 74,
+                          "name": "Consul",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 61,
+                          "src": "734:6:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_Consul_$61_storage_ptr_$",
+                            "typeString": "type(struct Dockchain.Consul storage pointer)"
+                          }
+                        },
+                        "id": 77,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "734:27:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Consul_$61_memory",
+                          "typeString": "struct Dockchain.Consul memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Consul_$61_memory",
+                          "typeString": "struct Dockchain.Consul memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 71,
+                        "name": "consuls",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64,
+                        "src": "721:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Consul_$61_storage_$dyn_storage",
+                          "typeString": "struct Dockchain.Consul storage ref[] storage ref"
+                        }
+                      },
+                      "id": 73,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "721:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Consul_$61_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct Dockchain.Consul storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 78,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
+                    "kind": "functionCall",
                     "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "baseExpression": {
-                        "argumentTypes": null,
-                        "id": 135,
-                        "name": "consul",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 126,
-                        "src": "661:6:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
-                          "typeString": "mapping(string memory => uint256)"
-                        }
-                      },
-                      "id": 137,
-                      "indexExpression": {
-                        "argumentTypes": null,
-                        "id": 136,
-                        "name": "country",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 128,
-                        "src": "668:7:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      },
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
-                      "nodeType": "IndexAccess",
-                      "src": "661:15:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 138,
-                      "name": "consulId",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 130,
-                      "src": "679:8:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "661:26:2",
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "721:41:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 140,
+                  "id": 79,
                   "nodeType": "ExpressionStatement",
-                  "src": "661:26:2"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "hexValue": "31",
-                    "id": 141,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": true,
-                    "kind": "number",
-                    "lValueRequested": false,
-                    "nodeType": "Literal",
-                    "src": "705:1:2",
-                    "subdenomination": null,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_rational_1_by_1",
-                      "typeString": "int_const 1"
-                    },
-                    "value": "1"
-                  },
-                  "functionReturnParameters": 134,
-                  "id": 142,
-                  "nodeType": "Return",
-                  "src": "698:8:2"
+                  "src": "721:41:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 144,
+            "id": 81,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "addConsul",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 131,
+              "id": 69,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 128,
-                  "name": "country",
+                  "id": 66,
+                  "name": "_country",
                   "nodeType": "VariableDeclaration",
-                  "scope": 144,
-                  "src": "582:21:2",
+                  "scope": 81,
+                  "src": "662:22:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1549,10 +1343,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 127,
+                    "id": 65,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "582:6:2",
+                    "src": "662:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1563,11 +1357,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 130,
-                  "name": "consulId",
+                  "id": 68,
+                  "name": "_consulId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 144,
-                  "src": "604:13:2",
+                  "scope": 81,
+                  "src": "686:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1575,10 +1369,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 129,
-                    "name": "uint",
+                    "id": 67,
+                    "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "604:4:2",
+                    "src": "686:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1588,191 +1382,108 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "581:37:2"
+              "src": "661:43:1"
             },
             "returnParameters": {
-              "id": 134,
+              "id": 70,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 133,
-                  "name": "consul_id",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 144,
-                  "src": "635:14:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 132,
-                    "name": "uint",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "635:4:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "634:16:2"
+              "parameters": [],
+              "src": "712:0:1"
             },
-            "scope": 196,
-            "src": "563:151:2",
+            "scope": 95,
+            "src": "643:127:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 158,
+              "id": 93,
               "nodeType": "Block",
-              "src": "786:55:2",
+              "src": "850:41:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 154,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "nodeType": "UnaryOperation",
-                    "operator": "++",
-                    "prefix": false,
-                    "src": "797:17:2",
-                    "subExpression": {
+                    "expression": {
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 151,
-                        "name": "consul",
+                        "id": 88,
+                        "name": "consuls",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 126,
-                        "src": "797:6:2",
+                        "referencedDeclaration": 64,
+                        "src": "861:7:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
-                          "typeString": "mapping(string memory => uint256)"
+                          "typeIdentifier": "t_array$_t_struct$_Consul_$61_storage_$dyn_storage",
+                          "typeString": "struct Dockchain.Consul storage ref[] storage ref"
                         }
                       },
-                      "id": 153,
+                      "id": 90,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 152,
-                        "name": "country",
+                        "id": 89,
+                        "name": "_consulId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 146,
-                        "src": "804:7:2",
+                        "referencedDeclaration": 83,
+                        "src": "869:9:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
                         }
                       },
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
-                      "lValueRequested": true,
+                      "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "797:15:2",
+                      "src": "861:18:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
+                        "typeIdentifier": "t_struct$_Consul_$61_storage",
+                        "typeString": "struct Dockchain.Consul storage ref"
                       }
                     },
+                    "id": 91,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "name",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 58,
+                    "src": "861:23:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
                     }
                   },
-                  "id": 155,
-                  "nodeType": "ExpressionStatement",
-                  "src": "797:17:2"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "hexValue": "31",
-                    "id": 156,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": true,
-                    "kind": "number",
-                    "lValueRequested": false,
-                    "nodeType": "Literal",
-                    "src": "832:1:2",
-                    "subdenomination": null,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_rational_1_by_1",
-                      "typeString": "int_const 1"
-                    },
-                    "value": "1"
-                  },
-                  "functionReturnParameters": 150,
-                  "id": 157,
+                  "functionReturnParameters": 87,
+                  "id": 92,
                   "nodeType": "Return",
-                  "src": "825:8:2"
+                  "src": "854:30:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 159,
+            "id": 94,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getConsul",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 147,
+              "id": 84,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 146,
-                  "name": "country",
+                  "id": 83,
+                  "name": "_consulId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 159,
-                  "src": "741:21:2",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 145,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "741:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "740:23:2"
-            },
-            "returnParameters": {
-              "id": 150,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 149,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 159,
-                  "src": "780:4:2",
+                  "scope": 94,
+                  "src": "795:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1780,10 +1491,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 148,
-                    "name": "uint",
+                    "id": 82,
+                    "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "780:4:2",
+                    "src": "795:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1793,394 +1504,53 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "779:6:2"
-            },
-            "scope": 196,
-            "src": "722:119:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 166,
-              "nodeType": "Block",
-              "src": "1016:30:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 164,
-                    "name": "buyer",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 110,
-                    "src": "1033:5:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "functionReturnParameters": 163,
-                  "id": 165,
-                  "nodeType": "Return",
-                  "src": "1026:12:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 167,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getBuyer",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 160,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "985:2:2"
+              "src": "794:19:1"
             },
             "returnParameters": {
-              "id": 163,
+              "id": 87,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 162,
-                  "name": "buy",
+                  "id": 86,
+                  "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 167,
-                  "src": "1003:11:2",
+                  "scope": 94,
+                  "src": "835:13:1",
                   "stateVariable": false,
-                  "storageLocation": "default",
+                  "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
                   },
                   "typeName": {
-                    "id": 161,
-                    "name": "address",
+                    "id": 85,
+                    "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1003:7:2",
-                    "stateMutability": "nonpayable",
+                    "src": "835:6:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "1002:13:2"
+              "src": "834:15:1"
             },
-            "scope": 196,
-            "src": "968:78:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 174,
-              "nodeType": "Block",
-              "src": "1102:31:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 172,
-                    "name": "seller",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 112,
-                    "src": "1119:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "functionReturnParameters": 171,
-                  "id": 173,
-                  "nodeType": "Return",
-                  "src": "1112:13:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 175,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getSeller",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 168,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1070:2:2"
-            },
-            "returnParameters": {
-              "id": 171,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 170,
-                  "name": "sell",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 175,
-                  "src": "1088:12:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 169,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1088:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1087:14:2"
-            },
-            "scope": 196,
-            "src": "1052:81:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 184,
-              "nodeType": "Block",
-              "src": "1178:29:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 182,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 180,
-                      "name": "buyer",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 110,
-                      "src": "1188:5:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 181,
-                      "name": "buy",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 177,
-                      "src": "1196:3:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "1188:11:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "id": 183,
-                  "nodeType": "ExpressionStatement",
-                  "src": "1188:11:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 185,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setBuyer",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 178,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 177,
-                  "name": "buy",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 185,
-                  "src": "1159:11:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 176,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1159:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1158:13:2"
-            },
-            "returnParameters": {
-              "id": 179,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1178:0:2"
-            },
-            "scope": 196,
-            "src": "1141:66:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 194,
-              "nodeType": "Block",
-              "src": "1252:31:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 192,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 190,
-                      "name": "seller",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 112,
-                      "src": "1262:6:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 191,
-                      "name": "sell",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 187,
-                      "src": "1271:4:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "1262:13:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "id": 193,
-                  "nodeType": "ExpressionStatement",
-                  "src": "1262:13:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 195,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setSeller",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 188,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 187,
-                  "name": "sell",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 195,
-                  "src": "1232:12:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 186,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1232:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1231:14:2"
-            },
-            "returnParameters": {
-              "id": 189,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1252:0:2"
-            },
-            "scope": 196,
-            "src": "1213:70:2",
-            "stateMutability": "nonpayable",
+            "scope": 95,
+            "src": "776:115:1",
+            "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 197,
-        "src": "36:1757:2"
+        "scope": 96,
+        "src": "34:860:1"
       }
     ],
-    "src": "0:1793:2"
+    "src": "0:895:1"
   },
   "compiler": {
     "name": "solc",
@@ -2192,10 +1562,65 @@
       "links": {},
       "address": "0x652893F19FDF931D9201133e091ed29A6B70dB67",
       "transactionHash": "0x5907cb3d59a22573058fd95fc92a60c6ea0279066d0c9a690e51c2439bb4e616"
+    },
+    "1581768395473": {
+      "events": {},
+      "links": {},
+      "address": "0xF5A1495757001656948bCE3D2d0638665da07bac",
+      "transactionHash": "0x50b04876641fdb8258a026422663e5a2d5a0a0cefc4a3a01308d4dba19df081d"
+    },
+    "1581769816630": {
+      "events": {},
+      "links": {},
+      "address": "0x5C354c489609cF0397c2fDa7437E5D2dd338529C",
+      "transactionHash": "0xd143e8226359e6f04ad75df65ec70006d4cafd1b4043929d516c69f4b720576e"
+    },
+    "1581776489299": {
+      "events": {},
+      "links": {},
+      "address": "0x517D4E3e4F0532B48e28A045B83FCf19A6D28966",
+      "transactionHash": "0x5defca5df224a30dd0f756c19768703bfaf55166c46834a04825d682011a1754"
+    },
+    "1581778253075": {
+      "events": {},
+      "links": {},
+      "address": "0xeD641054d9E544176fE9993f839bA66d19d3B1f3",
+      "transactionHash": "0xf2c92c578f7193bfca26025fef097f896a0e5170b097f2196fff45d5657f666a"
+    },
+    "1581779980425": {
+      "events": {},
+      "links": {},
+      "address": "0x08641D28152fA02374FF2D59fA668e37C6422B30",
+      "transactionHash": "0x5d3099c8546e87610bb528e12279dc63cb03ce95cd52e1ed9ace569b7968dd80"
+    },
+    "1581796604703": {
+      "events": {},
+      "links": {},
+      "address": "0x6fd74B90B53D66E1136ee459D3b1fC998f417d74",
+      "transactionHash": "0x6cf9212beab5ef3ce43ce877dad7cd232bc7d8700c5b7b9f164f0f39d591e6f2"
+    },
+    "1581797641165": {
+      "events": {},
+      "links": {},
+      "address": "0x809101cF9428d43e35C9B8c60E642688Eeeb9323",
+      "transactionHash": "0xa9ccd234000f1b72f98e9591fed8780c3af9bd662cb5e3cf6752ed3a22d71f4b"
+    },
+    "1581801215870": {
+      "events": {},
+      "links": {},
+      "address": "0x24810248463770E69fbecc76900aB18Ae4709c4D",
+      "transactionHash": "0xbfd6c382adf8ee09a0e0bdc30088d96673fe1e84bebe0747507bc9f30081aeef"
+    },
+    "1581804569134": {
+      "events": {},
+      "links": {},
+      "address": "0xf142F4083406C2EfB77e69Eef6C374838460421c",
+      "transactionHash": "0xe7d2972b2c7074fe34e87067443f1682c93fa6ccae49849a3d447cca8f1d5ab7"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-02-15T12:01:32.458Z",
+  "updatedAt": "2020-02-15T22:09:43.549Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
