@@ -1,0 +1,380 @@
+{
+  "contractName": "maya",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "turnme",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"turnme\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/myar.sol\":\"maya\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/myar.sol\":{\"keccak256\":\"0xa0dcc6a78af325416b14b2fee26172ad0083be6bec2d00c5830ab6f32c26eee1\",\"urls\":[\"bzz-raw://cd467c38d69bd59b451bdeb94c6d085c9321bed3befec95ab198b73cec7811e6\",\"dweb:/ipfs/QmUAWW9KciuqPf3Qj7br3YW8tLAbRqpYn1yS6PyrjLhqYz\"]}},\"version\":1}",
+  "bytecode": "0x60806040526010600055348015601457600080fd5b506087806100236000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80634a05e13514602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000805490509056fea265627a7a723158205a906d9726228249aee1bf5700264223cf3c272d5f69eeff37a778b6bcecf49b64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80634a05e13514602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000805490509056fea265627a7a723158205a906d9726228249aee1bf5700264223cf3c272d5f69eeff37a778b6bcecf49b64736f6c63430005100032",
+  "sourceMap": "36:126:3:-;;;70:2;57:15;;36:126;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:126:3;;;;;;;",
+  "deployedSourceMap": "36:126:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:126:3;;;;;;;;;;;;;;;;;;;81:76;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;120:4;144:5;;137:12;;81:76;:::o",
+  "source": "pragma solidity >=0.4.22 <0.7.0;\r\n\r\ncontract maya {\r\n    uint digit = 16;\r\n\r\n    function turnme() public view returns (uint) {\r\n        return digit;\r\n    }\r\n\r\n}",
+  "sourcePath": "D:\\SE\\TBWG\\hackDay\\wormupTBWG\\truffle\\contracts\\myar.sol",
+  "ast": {
+    "absolutePath": "/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/myar.sol",
+    "exportedSymbols": {
+      "maya": [
+        210
+      ]
+    },
+    "id": 211,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 198,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 210,
+        "linearizedBaseContracts": [
+          210
+        ],
+        "name": "maya",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 201,
+            "name": "digit",
+            "nodeType": "VariableDeclaration",
+            "scope": 210,
+            "src": "57:15:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 199,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "57:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3136",
+              "id": 200,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "70:2:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_16_by_1",
+                "typeString": "int_const 16"
+              },
+              "value": "16"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 208,
+              "nodeType": "Block",
+              "src": "126:31:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 206,
+                    "name": "digit",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 201,
+                    "src": "144:5:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 205,
+                  "id": 207,
+                  "nodeType": "Return",
+                  "src": "137:12:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 209,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "turnme",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 202,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "96:2:3"
+            },
+            "returnParameters": {
+              "id": 205,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 204,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 209,
+                  "src": "120:4:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 203,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "120:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "119:6:3"
+            },
+            "scope": 210,
+            "src": "81:76:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 211,
+        "src": "36:126:3"
+      }
+    ],
+    "src": "0:162:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/myar.sol",
+    "exportedSymbols": {
+      "maya": [
+        210
+      ]
+    },
+    "id": 211,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 198,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 210,
+        "linearizedBaseContracts": [
+          210
+        ],
+        "name": "maya",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 201,
+            "name": "digit",
+            "nodeType": "VariableDeclaration",
+            "scope": 210,
+            "src": "57:15:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 199,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "57:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3136",
+              "id": 200,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "70:2:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_16_by_1",
+                "typeString": "int_const 16"
+              },
+              "value": "16"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 208,
+              "nodeType": "Block",
+              "src": "126:31:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 206,
+                    "name": "digit",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 201,
+                    "src": "144:5:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 205,
+                  "id": 207,
+                  "nodeType": "Return",
+                  "src": "137:12:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 209,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "turnme",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 202,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "96:2:3"
+            },
+            "returnParameters": {
+              "id": 205,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 204,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 209,
+                  "src": "120:4:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 203,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "120:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "119:6:3"
+            },
+            "scope": 210,
+            "src": "81:76:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 211,
+        "src": "36:126:3"
+      }
+    ],
+    "src": "0:162:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "1581763339703": {
+      "events": {},
+      "links": {},
+      "address": "0xBD916fC7816FdC86836C1570d8a163483A05c15D",
+      "transactionHash": "0x09b5431a86617465bae94c9703927cb358290b074981afaf908e27207c58bcf1"
+    }
+  },
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-02-15T12:01:35.702Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

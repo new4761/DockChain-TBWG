@@ -115,15 +115,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"diplay\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[],\"name\":\"hello\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"text\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_b\",\"type\":\"uint256\"}],\"name\":\"myMinus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_b\",\"type\":\"uint256\"}],\"name\":\"myPlus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/OS/Documents/wormupTBWG/truffle/contracts/demoThailand.sol\":\"Calculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/OS/Documents/wormupTBWG/truffle/contracts/demoThailand.sol\":{\"keccak256\":\"0x67379c254fbdc0d07cb3dc1a9b0f3838e6dff8388007c4151f7defcda2344074\",\"urls\":[\"bzz-raw://c6ea62cdd9863e7a8ce4d5e10b57310869199e0a206f5ccc629c5d535dd2438e\",\"dweb:/ipfs/QmPNMymef6gYYGPXs6u5PvkLLUx1uf2MNYrvwhPJDo1Dsj\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610270806100606000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806319ff1d21146100515780637c7708cf146100d45780638da5cb5b14610120578063960a0a4d1461016a575b600080fd5b6100596101b6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61010a600480360360408110156100ea57600080fd5b8101908080359060200190929190803590602001909291905050506101f6565b6040518082815260200191505060405180910390f35b610128610206565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101a06004803603604081101561018057600080fd5b81019080803590602001909291908035906020019092919050505061022b565b6040518082815260200191505060405180910390f35b60606040518060400160405280600381526020017f574f570000000000000000000000000000000000000000000000000000000000815250905080905090565b6000818303905080905092915050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600081830190508090509291505056fea265627a7a7231582060023dc12ff3dddf480e8869009a6480d25c115a8360015886f82f2d6b68ce4f64736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806319ff1d21146100515780637c7708cf146100d45780638da5cb5b14610120578063960a0a4d1461016a575b600080fd5b6100596101b6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61010a600480360360408110156100ea57600080fd5b8101908080359060200190929190803590602001909291905050506101f6565b6040518082815260200191505060405180910390f35b610128610206565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101a06004803603604081101561018057600080fd5b81019080803590602001909291908035906020019092919050505061022b565b6040518082815260200191505060405180910390f35b60606040518060400160405280600381526020017f574f570000000000000000000000000000000000000000000000000000000000815250905080905090565b6000818303905080905092915050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600081830190508090509291505056fea265627a7a7231582060023dc12ff3dddf480e8869009a6480d25c115a8360015886f82f2d6b68ce4f64736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"diplay\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[],\"name\":\"hello\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"text\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_b\",\"type\":\"uint256\"}],\"name\":\"myMinus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_b\",\"type\":\"uint256\"}],\"name\":\"myPlus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"res\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/demoThailand.sol\":\"Calculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/demoThailand.sol\":{\"keccak256\":\"0x67379c254fbdc0d07cb3dc1a9b0f3838e6dff8388007c4151f7defcda2344074\",\"urls\":[\"bzz-raw://c6ea62cdd9863e7a8ce4d5e10b57310869199e0a206f5ccc629c5d535dd2438e\",\"dweb:/ipfs/QmPNMymef6gYYGPXs6u5PvkLLUx1uf2MNYrvwhPJDo1Dsj\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610270806100606000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806319ff1d21146100515780637c7708cf146100d45780638da5cb5b14610120578063960a0a4d1461016a575b600080fd5b6100596101b6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61010a600480360360408110156100ea57600080fd5b8101908080359060200190929190803590602001909291905050506101f6565b6040518082815260200191505060405180910390f35b610128610206565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101a06004803603604081101561018057600080fd5b81019080803590602001909291908035906020019092919050505061022b565b6040518082815260200191505060405180910390f35b60606040518060400160405280600381526020017f574f570000000000000000000000000000000000000000000000000000000000815250905080905090565b6000818303905080905092915050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600081830190508090509291505056fea265627a7a723158202d2e0ab9d358d1e86668649241742b6f5f7ec2a72b494c091a2c88571dbfb0df64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806319ff1d21146100515780637c7708cf146100d45780638da5cb5b14610120578063960a0a4d1461016a575b600080fd5b6100596101b6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61010a600480360360408110156100ea57600080fd5b8101908080359060200190929190803590602001909291905050506101f6565b6040518082815260200191505060405180910390f35b610128610206565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101a06004803603604081101561018057600080fd5b81019080803590602001909291908035906020019092919050505061022b565b6040518082815260200191505060405180910390f35b60606040518060400160405280600381526020017f574f570000000000000000000000000000000000000000000000000000000000815250905080905090565b6000818303905080905092915050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600081830190508090509291505056fea265627a7a723158202d2e0ab9d358d1e86668649241742b6f5f7ec2a72b494c091a2c88571dbfb0df64736f6c63430005100032",
   "sourceMap": "36:526:1:-;;;92:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:58:1;132:10;124:5;;:18;;;;;;;;;;;;;;;;;;36:526;;;;;;",
   "deployedSourceMap": "36:526:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:526:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;452:105;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;452:105:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;333:112;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;333:112:1;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;63:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;213:114;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;213:114:1;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;452:105;485:18;515:12;;;;;;;;;;;;;;;;;;;545:4;538:11;;452:105;:::o;333:112::-;383:8;414:2;409;:7;403:13;;434:3;427:10;;333:112;;;;:::o;63:20::-;;;;;;;;;;;;;:::o;213:114::-;262:8;296:2;291;:7;285:13;;316:3;309:10;;213:114;;;;:::o",
   "source": "pragma solidity >=0.4.22 <0.7.0;\r\n\r\ncontract Calculator {\r\n    address public owner;\r\n\r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    event diplay(address _from,uint res,uint _value);\r\n    function myPlus(uint _a,uint _b) public returns (uint res ) {\r\n         res = _a + _b;\r\n        return res;\r\n    }\r\n    function myMinus(uint _a,uint _b) public returns (uint res) {\r\n       res = _a - _b;\r\n        return res;\r\n    }\r\n     function hello() public returns (string memory text) {\r\n       text = \"WOW\";\r\n        return text;\r\n    }\r\n\r\n}\r\n",
-  "sourcePath": "C:\\Users\\OS\\Documents\\wormupTBWG\\truffle\\contracts\\demoThailand.sol",
+  "sourcePath": "D:\\SE\\TBWG\\hackDay\\wormupTBWG\\truffle\\contracts\\demoThailand.sol",
   "ast": {
-    "absolutePath": "/C/Users/OS/Documents/wormupTBWG/truffle/contracts/demoThailand.sol",
+    "absolutePath": "/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/demoThailand.sol",
     "exportedSymbols": {
       "Calculator": [
         106
@@ -223,7 +223,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 121,
+                        "referencedDeclaration": 225,
                         "src": "132:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -936,7 +936,7 @@
     "src": "0:564:1"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/OS/Documents/wormupTBWG/truffle/contracts/demoThailand.sol",
+    "absolutePath": "/D/SE/TBWG/hackDay/wormupTBWG/truffle/contracts/demoThailand.sol",
     "exportedSymbols": {
       "Calculator": [
         106
@@ -1036,7 +1036,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 121,
+                        "referencedDeclaration": 225,
                         "src": "132:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1848,11 +1848,42 @@
       "links": {},
       "address": "0x25eE001073AC003EBCF320A1BE5b2C929Bb4dAD9",
       "transactionHash": "0x04b5d86c7e88675436981b01c8c0be0b6e1f4cd0c2c1fe2abf51d7c4d7df6fae"
+    },
+    "1581763339703": {
+      "events": {
+        "0xdacda087ebf322018a8cec610e9217377482cce0955bbf359cb5cc9a4c73bccf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "res",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "diplay",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xfB6314eEfBe12324a7B16C41419c5adBbf7BCcfC",
+      "transactionHash": "0x7239954d285d6cb86374fb96bf041eac530560768ba67cf1384855f821210360"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-02-15T00:51:28.498Z",
-  "networkType": "ethereum",
+  "updatedAt": "2020-02-15T12:01:32.456Z",
   "devdoc": {
     "methods": {}
   },
