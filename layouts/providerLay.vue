@@ -3,7 +3,7 @@
        
     <v-app class="bg">
 
-      
+
     <v-navigation-drawer
       v-model="rightDrawer"
       right
@@ -56,9 +56,10 @@
       </v-list>
     </v-navigation-drawer>
      
-      <v-app-bar fixed app color="blue" dark clipped-right>
-         <img dark class="mr-3" src=https://i.imgur.com/L9dSmJm.png height="40"/>
+      <v-app-bar fixed app color="orange" dark clipped-right>
+        <img dark class="mr-3" src=https://i.imgur.com/L9dSmJm.png height="40"/>
         <v-toolbar-title>
+           
           <h3>
             <!-- <v-icon dark>
               mdi-bitcoin
@@ -78,6 +79,7 @@
           <nuxt />
         </v-container>
       </v-content>
+
      
       <v-footer fixed app dark>
         <span>LaZyDev &copy; {{ new Date().getFullYear() }}</span>
@@ -90,10 +92,11 @@
 
 <script>
 export default {
-  
   data() {
     return {
-       rightDrawer: false,
+      right: true,
+      rightDrawer: false,
+
     };
   }
 };
@@ -103,7 +106,7 @@ export default {
 .bg{
     /* background: rgb(0,120,233);
     background: linear-gradient(180deg, rgba(0,120,233,1) 0%, rgba(0,142,244,1) 52%, rgba(0,212,255,1) 100%); */
-    background: url(https://i.imgur.com/mXmiwDV.png) no-repeat ;
+    background: url(https://i.imgur.com/HJMyKem.png) no-repeat ;
     background-size: cover;
 }
 </style>
