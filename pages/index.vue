@@ -1,43 +1,220 @@
 <template>
 
+ <v-card
+    color="black"
+    dark
+    flat
+    tile
+  >
+    <v-window v-model="onboarding">
+      <v-window-item>
+        <v-card
+          color="transparent"
+          height="450"
+        >
+          <v-img
+                  src="https://i.imgur.com/NuPYXSK.png"
+                  gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                  height="450px"
+                >
+          <v-layout
+            align-center
+            justify-center
+            fill-height
+            tag="v-card-text"
+          >
+            Transparent themed, for background-imaged slides. Background color black added for demonstration purposes.
+          </v-layout>
+          </v-img>
+        </v-card>
+      </v-window-item>
+
+      
+       <v-window-item>
+        <v-card
+          color="transparent"
+          height="450"
+        >
+          <v-img
+                  src="https://i.imgur.com/81DAMN0.png"
+                  gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                  height="450px"
+                >
+          <v-layout
+            align-center
+            justify-center
+            fill-height
+            tag="v-card-text"
+          >
+            Transparent themed, for background-imaged slides. Background color black added for demonstration purposes.
+          </v-layout>
+          </v-img>
+        </v-card>
+      </v-window-item>
+
+        <v-window-item>
+        <v-card
+          color="transparent"
+          height="450"
+        >
+          <v-img
+                  src="https://i.imgur.com/nmKY77J.png"
+                  gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                  height="450px"
+                >
+          <v-layout
+            align-center
+            justify-center
+            fill-height
+            tag="v-card-text"
+          >
+            Transparent themed, for background-imaged slides. Background color black added for demonstration purposes.
+          </v-layout>
+          </v-img>
+        </v-card>
+      </v-window-item>
+
+              <v-window-item>
+        <v-card
+          color="transparent"
+          height="450"
+        >
+          <v-img
+                  src="https://i.imgur.com/G6KyehW.png"
+                  gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                  height="450px"
+                >
+          <v-layout
+            align-center
+            justify-center
+            fill-height
+            tag="v-card-text"
+          >
+            Transparent themed, for background-imaged slides. Background color black added for demonstration purposes.
+          </v-layout>
+          </v-img>
+        </v-card>
+      </v-window-item>
+
+    </v-window>
+
+    <v-card-actions class="justify-space-between">
+      <v-btn
+        flat
+        @click="prev"
+      >
+        <v-icon>mdi-chevron-left</v-icon>
+      </v-btn>
+      <v-item-group
+        v-model="onboarding"
+        class="text-xs-center"
+        mandatory
+      >
+        <v-item>
+          <v-btn
+            slot-scope="{ active, toggle }"
+            :input-value="active"
+            icon
+            @click="toggle"
+          >
+            <v-icon>mdi-record</v-icon>
+          </v-btn>
+        </v-item>
+
+                <v-item>
+          <v-btn
+            slot-scope="{ active, toggle }"
+            :input-value="active"
+            icon
+            @click="toggle"
+          >
+            <v-icon>mdi-record</v-icon>
+          </v-btn>
+        </v-item>
+
+          <v-item>
+          <v-btn
+            slot-scope="{ active, toggle }"
+            :input-value="active"
+            icon
+            @click="toggle"
+          >
+            <v-icon>mdi-record</v-icon>
+          </v-btn>
+        </v-item>
+
+          <v-item>
+          <v-btn
+            slot-scope="{ active, toggle }"
+            :input-value="active"
+            icon
+            @click="toggle"
+          >
+            <v-icon>mdi-record</v-icon>
+          </v-btn>
+        </v-item>
+
+
+        
+      </v-item-group>
+      <v-btn
+        flat
+        @click="next"
+      >
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+
+
+
+
+
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import VuetifyLogo from "~/components/VuetifyLogo.vue";
-import { mapActions, mapState, mapGetters } from "vuex";
+
 export default {
+
+  layout:"first",
   computed: {
-    ...mapState({
-      AccountsList: state => state.web3.ethAccountsList
-    }),
-    ...mapGetters({
-      getAccountById: "web3/getEthAccountsId",
-      getBalanceById: "web3/getEthAccountsBalance"
-    })
+    
   },
   data: () => ({
-    selectAcc:"0x8c47ca3668cfb13cd3e041a1dae6262d035c1403"
+    
+    length: 4,
+      onboarding: 0,
+      card:[
+        "https://i.imgur.com/NuPYXSK.png",
+        "https://i.imgur.com/81DAMN0.png",
+        "https://i.imgur.com/nmKY77J.png",
+        "https://i.imgur.com/G6KyehW.png"
+      ]
+    
   }),
   components: {
-    Logo,
-    VuetifyLogo
+   
   },
   mounted() {
-    this.getUser();
+   
   },
-  methods: {
-    ...mapActions({
-      getUser: "web3/setAccountsList",
-      getBalance: "web3/setEthAccountsBalance"
-    }),
-    OngetEthAccountsList() {
-     // console.log(this.selectAcc)
-      this.getBalance(this.selectAcc)
-    },
-    test() {
-      return Object.values(this.AccountsList);
+ methods: {
+      next () {
+        this.onboarding = this.onboarding + 1 === this.length
+          ? 0
+          : this.onboarding + 1
+      },
+      prev () {
+        this.onboarding = this.onboarding - 1 < 0
+          ? this.length - 1
+          : this.onboarding - 1
+      }
     }
-  }
 };
 </script>
+
+
+<style scoped>
+
+
+</style>
