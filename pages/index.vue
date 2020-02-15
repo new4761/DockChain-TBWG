@@ -1,18 +1,5 @@
 <template>
-  <div>
 
-    dfgdytfuygfiuguihlokjp
-    <div v-for="(acc,index) in AccountsList" :key="index">
-      <h3>{{acc}}</h3>
-    </div>
-    <!-- <button @click="getUser()">get User from API</button> -->
-    <p>{{AccountsList}}</p>
-    <br />
-    <h1>Selected => {{selectAcc}}</h1>
-    <br />
-    <h3>{{getBalanceById}}</h3>
-    <v-select :items="AccountsList" v-model="selectAcc" @change="OngetEthAccountsList()" label="Standard"></v-select>
-  </div>
 </template>
 
 <script>
