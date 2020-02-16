@@ -5,13 +5,13 @@ contract ProductFactory {
 
     function createProduct(
         address _ownProduct,
-        address _destination,
+        address _provider,
         string memory _productName
     ) public
      {
         Product newProduct = new Product(
             _ownProduct,
-            _destination,
+            _provider,
             _productName
         );
       products.push(newProduct);
@@ -30,7 +30,7 @@ contract ProductFactory {
 
 contract Product {
     address ownProduct;
-    address destination;
+    address provider;
     string productName;
 
     // struct Document {
@@ -49,15 +49,15 @@ contract Product {
 
     constructor(
         address _ownProduct,
-        address _destination,
+        address _provider,
         string memory _productName
     ) public {
         ownProduct = _ownProduct;
-        destination = _destination;
+        provider = _provider;
         productName = _productName;
     }
  function getProductData()public view returns(address,address,string memory){
-     return (ownProduct,destination,productName);
+     return (ownProduct,provider,productName);
  }
 
 
@@ -73,6 +73,10 @@ contract Product {
 
     }
 
+function setProvider(address newProvider) public {
+provider = newProvider;
+
+}
     function addDocment(string memory docID, uint256 stageID) public {
         productStages[stageID].doscumentIDs.push(docID);
 

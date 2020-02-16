@@ -8,7 +8,7 @@ contract ContactFactory {
         string memory _docmentCode
     ) public {
         Contact newContact = new Contact(
-            _sellerContact,
+            msg.sender,
             _buyerContact,
             _docmentCode,
             false
@@ -16,6 +16,9 @@ contract ContactFactory {
         contacts.push(newContact);
 
     }
+    //int id = contractMap.push()-1;
+
+    )
     function getContact(uint256 _Id)
         public
         view
