@@ -15,6 +15,7 @@
     "@feathersjs/express": "^1.3.1",
     "@feathersjs/feathers": "^3.3.1",
     "@nuxtjs/axios": "^5.3.6",
+    "axios": "^0.19.2",
     "cross-env": "^5.2.0",
     "fs": "0.0.1-security",
     "ganache": "^6.4.4",

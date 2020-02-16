@@ -1,9 +1,5 @@
 <template>
   <div>
-<<<<<<< HEAD
-    <v-app class="light">
-    <nuxt/>
-=======
 
        
     <v-app>
@@ -33,7 +29,6 @@
         <span>LaZyDev &copy; {{ new Date().getFullYear() }}</span>
       </v-footer>
       </v-parallax>
->>>>>>> front-end
     </v-app>
   
   </div>
