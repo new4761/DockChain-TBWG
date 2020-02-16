@@ -16,7 +16,6 @@
             </v-card>
           </v-col>
 
-
              <v-col cols="5">
             <v-card height="380">
               <v-row>
@@ -180,7 +179,7 @@
                 <span class="headline">Target</span>
               </v-card-title>
               <v-card-text>
-                <v-container> </v-container>
+              
                 <small>*required</small>
 
                 <v-text-field
@@ -191,12 +190,13 @@
                 ></v-text-field>
               </v-card-text>
               <v-card-actions>
+                <v-spacer></v-spacer>
                 <v-btn color="blue darken-1" text @click="dialog = false"
                   >Close</v-btn
                 >
                 <nuxt-link to="/form">
                   <v-btn color="blue darken-1" text @click="dialog = false"
-                    >Save</v-btn
+                    >Submit</v-btn
                   >
                 </nuxt-link>
               </v-card-actions>

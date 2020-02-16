@@ -2,13 +2,10 @@
   <v-container fluid>
     <div>
       <v-card elevation="5" class="pa-5">
-        <!-- 3cards -->
         <div class="pa-3">
             <h1>Provider Page</h1>
-
         </div>
         <v-row justify="center" class="mb-10">
-
         <v-card width="1000"
          class="pa-3"
          color="orange lighten-5">

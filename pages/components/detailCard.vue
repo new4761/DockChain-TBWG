@@ -1,6 +1,6 @@
 <template>
 
-      <v-card outlined class="pa-12" >
+      <v-card outlined class="pa-12" color="rgb(255,255,255,0.9" >
         <!-- 3cards -->
         <v-row justify="center" align="center" class="mb-10">
           <div class="text-center">
@@ -24,7 +24,7 @@
               <template v-for="(item, index) in steps">
                 <v-stepper-step :key="`${index}-step`" :complete="status > index+1" :step="index+1" class="pa-12">
                   {{ item.title }}
-                  {{index}}
+                  <!-- index in items = >{{index}} -->
                   <small>{{ item.date }}</small>
                   <v-spacer></v-spacer>
                   <small>{{ item.desc }}</small>
@@ -52,97 +52,63 @@
 export default {
   computed: {},
   data: () => ({
-    processName: " test ",
-    processDesc:"test desc eiei",
+    processName: " process #  ",
+    processDesc:"description",
     date: "xx/xx/xx",
-    status: 9,
+    status: 3,
     e6: 1,
     steps: [
       {
         id: "1",
-        title: "test",
+        title: "step # 1",
         date: "xx/xx/xx",
         desc: "desc",
-        detail: "222222222222222222222222222"
+        detail: "this is detail"
       },
-      {
-        id: "2",
-        title: "test",
+       {
+        id: "1",
+        title: "step # 2",
         date: "xx/xx/xx",
         desc: "desc",
-        detail: "33333"
+        detail: "this is detail"
       },
-      {
-        id: "3",
-        title: "test",
+       {
+        id: "1",
+        title: "step # 3",
         date: "xx/xx/xx",
         desc: "desc",
-        detail: "33333"
+        detail: "this is detail"
       },
-      {
-        id: "4",
-        title: "test",
+       {
+        id: "1",
+        title: "step # 4",
         date: "xx/xx/xx",
         desc: "desc",
-        detail: "33333"
+        detail: "this is detail"
       },
-      {
-        id: "5",
-        title: "test",
+       {
+        id: "1",
+        title: "step # 5",
         date: "xx/xx/xx",
         desc: "desc",
-        detail: "33333"
+        detail: "this is detail"
       },
-      {
-        id: "5",
-        title: "test",
+       {
+        id: "1",
+        title: "step # 6",
         date: "xx/xx/xx",
         desc: "desc",
-        detail: "33333"
+        detail: "this is detail"
       },
-      {
-        id: "5",
-        title: "test",
+       {
+        id: "1",
+        title: "step # 7",
         date: "xx/xx/xx",
         desc: "desc",
-        detail: "33333"
+        detail: "this is detail"
       },
-      {
-        id: "5",
-        title: "test",
-        date: "xx/xx/xx",
-        desc: "desc",
-        detail: "33333"
-      },
-      {
-        id: "5",
-        title: "test",
-        date: "xx/xx/xx",
-        desc: "desc",
-        detail: "33333"
-      },
-      {
-        id: "5",
-        title: "test",
-        date: "xx/xx/xx",
-        desc: "desc",
-        detail: "33333"
-      },
-
-      {
-        id: "5",
-        title: "test",
-        date: "xx/xx/xx",
-        desc: "desc",
-        detail: "33333"
-      },
-      {
-        id: "5",
-        title: "test",
-        date: "xx/xx/xx",
-        desc: "desc",
-        detail: "33333"
-      }
+      
+     
     ]
   }),
   components: {},

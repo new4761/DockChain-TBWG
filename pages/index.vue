@@ -23,7 +23,10 @@
             fill-height
             tag="v-card-text"
           >
-            Transparent themed, for background-imaged slides. Background color black added for demonstration purposes.
+                      <div>
+              <h1 class="text-center display-4 font-weight-bold">DockChain</h1> <br>
+              <h5 class="text-center">description and details</h5>
+            </div>
           </v-layout>
           </v-img>
         </v-card>
@@ -46,7 +49,10 @@
             fill-height
             tag="v-card-text"
           >
-            Transparent themed, for background-imaged slides. Background color black added for demonstration purposes.
+                       <div>
+              <h1 class="text-center display-4 font-weight-bold">DockChain</h1> <br>
+              <h5 class="text-center">description and details</h5>
+            </div>
           </v-layout>
           </v-img>
         </v-card>
@@ -68,7 +74,10 @@
             fill-height
             tag="v-card-text"
           >
-            Transparent themed, for background-imaged slides. Background color black added for demonstration purposes.
+                       <div>
+              <h1 class="text-center display-4 font-weight-bold">DockChain</h1> <br>
+              <h5 class="text-center">description and details</h5>
+            </div>
           </v-layout>
           </v-img>
         </v-card>
@@ -90,7 +99,10 @@
             fill-height
             tag="v-card-text"
           >
-            Transparent themed, for background-imaged slides. Background color black added for demonstration purposes.
+            <div>
+              <h1 class="text-center display-4 font-weight-bold">DockChain</h1> <br>
+              <h5 class="text-center">description and details</h5>
+            </div>
           </v-layout>
           </v-img>
         </v-card>

@@ -5,7 +5,7 @@
           <v-col cols="8">
             <v-card class="elevation-12" color="white">
               <v-toolbar color="primary" flat>
-                <v-toolbar-title > Login form</v-toolbar-title>
+                <v-toolbar-title class="white--text"> Login form</v-toolbar-title>
                 <v-spacer />
               </v-toolbar>
               <v-card-text class="pa-x-5">
